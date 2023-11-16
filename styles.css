@@ -1,0 +1,290 @@
+#backgroundCanvas {
+    position: fixed; /* Fixed position */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place it behind all other content */
+  }
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: #66FCF1;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:#0B0C10;
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 20px; /* Add padding */
+    box-sizing: border-box;
+}
+
+header {
+    background-color:#0B0C10;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Brush Script MT', cursive; /* Cursive font for SK */
+    font-size: 48px;
+    position: relative;
+    border: 2px solid #66FCF1; 
+    border-radius: 50%; /* Rounded border */
+    padding: 10px; /* Padding for the circle */
+    transition: color 0.3s, background-color 0.3s;
+    color: #66FCF1; /* Teal color */
+    transition: transform 0.3s ease-in-out; /* Hover effect */
+}
+
+.logo:hover {
+    color: teal;
+    background-color: #f5f5f5;
+    transform: translateY(-5px); /* Same hover effect as navigation buttons */
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px; /* Increased spacing */
+}
+
+.nav-link {
+    color: #66FCF1;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 5px 10px;
+    border: 2px solid #66FCF1;
+    border-radius: 10px; /* Rounded edges */
+}
+
+.nav-link:hover {
+    color: teal;
+    background-color: #f5f5f5;
+}
+
+
+.full-window {
+    height: 100vh;
+}
+
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the text vertically */
+    align-items: center; /* Center the text horizontally */
+}
+
+h1 {
+    font-size: 64px; /* Enlarged Size */
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0; /* Removed top margin */
+}
+
+.sub-heading {
+    font-family: 'Arial', sans-serif; /* San Serif Font */
+    font-size: 36px; /* Large Font */
+    line-height: 1.5;
+    text-align: center; /* Centered Text */
+}
+
+.home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 150px);
+}
+
+.home-text, .home-image {
+    width: 50%;
+}
+
+
+.home-image img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 5px solid #66FCF1;
+    object-position: center -10px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; /* Add transition */
+}
+
+.home-image img:hover {
+    transform: translateY(-10px); /* Lift up the image */
+}
+
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-image, .about-text {
+    width: 80%; /* Reduce the size */
+    height: auto;
+    padding: 10%; /* Add padding */
+    box-sizing: border-box; /* Add teal border */
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border: 3px solid #66FCF1; /* Add teal border */
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: translateY(-10px);
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 1.5em;
+}
+
+.work-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap; /* wrapping */
+    height: 100%; /* Full height of the parent container */
+    flex-direction: row; /* Stack items vertically */ 
+}
+
+.work-card {
+    width: calc(33% - 20px);
+    border-radius: 10px;
+    height: 400px; /* Fixed height */
+    margin: 10px; /* Equal spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 2px solid #66FCF1;
+    background-color: #0B0C10;
+    text-align: center;
+    margin-bottom: 20px; /* Add some bottom margin */
+}
+
+.work-card img {
+    width: 100%;
+    height: calc(100% * 2 / 5);
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.project-name {
+    font-weight: bold; /* Make text bold */
+    text-align: center; /* Center the text */
+    padding: 40px; /* Add some padding */
+
+}
+
+.card-text {
+    height: calc(100% * 3 / 5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.read-button {
+    color: #66FCF1; /* Teal color */
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #66FCF1; /* Teal border */
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s/* Add transition */
+}
+
+.read-button:hover {
+    color: teal;
+    background-color: #f5f5f5;
+    transform: translateY(-5px); /* Lift up the button */
+}
+
+
+.resume-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* Full window height */
+
+}
+
+.resume-text, .resume-file {
+    width: 50%;
+    padding-right: 5%;
+}
+
+.resume-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the text vertically */
+    align-items: center; /* Center the text horizontally */
+    font-family: 'Arial', sans-serif; /* San Serif Font */
+    font-size: 36px; /* Same as sub-heading */
+    text-align: center; /* Centered Text */
+}
+
+
+.quarter-window {
+    height: 25vh; /* 1/4 of the full window height */
+}
+
+.contact-top, .contact-bottom {
+    height: 50%; /* Divide into top and bottom */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-top p, .contact-bottom p, .contact-bottom a {
+    font-family: 'Arial', sans-serif; /* San Serif Font */
+    font-size: 30px; /* Font size 30px */
+    text-align: center; /* Centered Text */
+}
+
+a[href^="mailto:"] {
+    color: #66FCF1; /* Set the color to teal */
+    text-decoration: none; /* Remove underline if you prefer */
+}
+
+.contact-bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-linkedin img {
+    width: 100px;
+    height: 100px;
+}
+
+.contact-linkedin img:hover {
+    transform: translateY(-10px);
+}
+
+
